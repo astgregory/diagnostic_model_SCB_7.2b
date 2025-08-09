@@ -68,6 +68,7 @@ plt.bar(x - width, precision, width, label='Точность', color='blue')
 plt.bar(x, recall, width, label='Полнота', color='orange')
 plt.bar(x + width, f1_score, width, label='F1-Score', color='green')
 plt.legend()
+plt.show()
 
 joblib.dump(model, 'models/model.joblib')
 joblib.dump(vectorizer, 'models/vectorizer.joblib')
